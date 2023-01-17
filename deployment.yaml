@@ -76,7 +76,8 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /$1 
 spec:
   rules:
-    - http:
+    - host: nginx.local.test
+      http:
         paths:
           - path: /
             pathType: Prefix
@@ -85,7 +86,8 @@ spec:
                 name: my-service
                 port:
                   number: 80
-    - http:
+    - host: nginx.mylocal.test
+      http:
         paths:
           - path: /
             pathType: Prefix
