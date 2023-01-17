@@ -19,6 +19,8 @@ spec:
         image: websubhash/nginxtest:latest
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: nginximage
 ---
 apiVersion: apps/v1
 kind: Deployment
