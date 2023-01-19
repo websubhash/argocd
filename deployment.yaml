@@ -40,9 +40,9 @@ spec:
     spec:
       containers:
       - name: httpd
-        image: httpd
+        image: websubhash/nginxtest:landing-server
         ports:
-        - containerPort: 80
+        - containerPort: 3002
 ---
 apiVersion: v1
 kind: Service
