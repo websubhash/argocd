@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: websubhash/nginxtest:landingclient5
+        image: websubhash/nginxtest:landing1
         ports:
         - containerPort: 80
       imagePullSecrets:
