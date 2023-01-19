@@ -43,6 +43,8 @@ spec:
         image: websubhash/nginxtest:landing-server
         ports:
         - containerPort: 3002
+      imagePullSecrets:
+      - name: nginximage
 ---
 apiVersion: v1
 kind: Service
