@@ -55,7 +55,7 @@ spec:
       app: httpd
   ports:
     - protocol: TCP
-      port: 443
+      port: 80
       targetPort: 3002
   type: NodePort
 ---
@@ -99,4 +99,4 @@ spec:
               service:
                 name: my-httpd
                 port:
-                  number: 443
+                  number: 80
